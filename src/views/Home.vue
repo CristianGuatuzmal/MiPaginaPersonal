@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Crhistian Guatuzmal</h1>
+    <ul
+        v-for="view in views"
+        :key="view.id"
+    >
+      <router-link path="view.path">{{ view.name }}</router-link>
+    </ul>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'home',
   components: {
-    HelloWorld
+  },
+  computed: {
+    views () {
+      return this.$router.options.routes[1].children
+    }
   }
 }
 </script>
