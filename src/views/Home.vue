@@ -1,24 +1,38 @@
 <template>
   <div class="home">
-    <h1>Crhistian Guatuzmal</h1>
-    <ul
-        v-for="view in views"
-        :key="view.id"
-    >
-      <router-link path="view.path">{{ view.name }}</router-link>
-    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'home',
-  components: {
-  },
-  computed: {
-    views () {
-      return this.$router.options.routes[1].children
-    }
-  }
+  name: 'Home'
 }
 </script>
+
+<style>
+  .header{
+    background-color: rgba(254,152,0);
+  }
+  .home{
+    display: flow-root;
+    background-image: url(../assets/IMG_20190211_163507.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .home .ExteriorFrame {
+     background-color: rgba(254,152,0,0.6);
+  }
+  .home .ExteriorFrame h1 {
+    color: rgba(255,255,255);
+  }
+  button {
+    border-radius: 0.6rem;
+  }
+  .home .InteriorFrame {
+    background-color: #FFA50A;
+  }
+  .home a {
+      color: rgba(255,255,255);
+  }
+</style>
