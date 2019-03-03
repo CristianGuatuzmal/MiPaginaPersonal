@@ -1,5 +1,9 @@
 <template>
-  <div class="home">
+  <div class="Home">
+  <div class="pseudoLogo">
+    <h1>Crhistian Guatuzmal</h1>
+    <a>Web and software developer</a>
+  </div>
   </div>
 </template>
 
@@ -10,29 +14,28 @@ export default {
 </script>
 
 <style>
-  .header{
-    background-color: rgba(254,152,0);
-  }
-  .home{
-    display: flow-root;
+  .Home{
+    display: flex;
     background-image: url(../assets/IMG_20190211_163507.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 93.5vh;
+    padding: 4.6% 0 0;
   }
-  .home .ExteriorFrame {
-     background-color: rgba(254,152,0,0.6);
+  .pseudoLogo {
+    display:grid;
+    align-self: center;
+    color: ghostwhite;
+    text-align: left;
+    padding: 3%;
   }
-  .home .ExteriorFrame h1 {
-    color: rgba(255,255,255);
+  .pseudoLogo h1 {
+    font-size: 5rem;
+    margin: 0%;
+    text-shadow: 3px 2px 2px rgba(42,42,42,0.5);
   }
-  button {
-    border-radius: 0.6rem;
-  }
-  .home .InteriorFrame {
-    background-color: #FFA50A;
-  }
-  .home a {
-      color: rgba(255,255,255);
+  .pseudoLogo a {
+    font-size: 2.5rem;
+    text-shadow: 3px 2px 2px rgba(42,42,42,0.5);
   }
 </style>

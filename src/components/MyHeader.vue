@@ -1,15 +1,7 @@
 <template>
   <div class="navBar">
-    <router-link class="navigators"
-                    :to="'/'"
-                    tag = "h1"
-        >
-          Crhistian Guatuzmal
-    </router-link>
-    <ul class="links">
-      <router-link :to="'/'">
-        Home
-      </router-link>
+    <h1>Crhistian Guatuzmal</h1>
+  <ul class="links">
       <router-link class="navigators"
                     v-for="view in views"
                     :key="view.id"
@@ -26,17 +18,7 @@ export default {
   name: 'MyHeader',
   computed: {
     views () {
-      var temporalRoute = this.$router.options.routes
-      var routes = []
-      for (var i = 1; i < temporalRoute.length; i++) {
-        routes[i - 1] = temporalRoute[i]
-      }
-      return routes
-    }
-  },
-  methods: {
-    selected () {
-
+      return this.$router.options.routes
     }
   }
 }

@@ -3,13 +3,18 @@
     <div class="texts">
       <h2>My Jobs</h2>
       <p>Aún no tengo proyectos personales para mostrar aquí</p>
+      <LinkATrabajos></LinkATrabajos>
     </div>
   </div>
 </template>
 
 <script>
+import LinkATrabajos from '@/components/LinkATrabajos'
 export default {
-  name: 'MyJobs'
+  name: 'MyJobs',
+  components: {
+    LinkATrabajos
+  }
 }
 </script>
 

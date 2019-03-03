@@ -15,6 +15,9 @@ export default {
 </script>
 
 <style>
+.header{
+  background-color: rgba(254,152,0);
+}
 body {
   margin: 0px;
   border: 0px;

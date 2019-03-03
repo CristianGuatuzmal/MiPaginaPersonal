@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '@/views/Home.vue'
+import Home from '@/views/Home.vue'
 import LetsTalk from '@/views/LetsTalk.vue'
 import AboutMe from '@/views/AboutMe.vue'
 import MyJobs from '@/views/MyJobs.vue'
@@ -12,7 +12,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      components: home
+      component: Home
     },
     {
       path: '/aboutme',
