@@ -16,7 +16,7 @@ export default {
 
 <style>
 .header{
-  background-color: rgba(254,152,0);
+  background-color: #FFBE4D;
 }
 body {
   margin: 0px;

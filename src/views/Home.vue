@@ -30,12 +30,12 @@ export default {
     padding: 3%;
   }
   .pseudoLogo h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin: 0%;
     text-shadow: 3px 2px 2px rgba(42,42,42,0.5);
   }
   .pseudoLogo a {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     text-shadow: 3px 2px 2px rgba(42,42,42,0.5);
   }
 </style>
